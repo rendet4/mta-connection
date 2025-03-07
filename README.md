@@ -1,6 +1,6 @@
 # MtaConnection
 
-![npm](https://img.shields.io/npm/v/mta-connection) ![license](https://img.shields.io/github/license/username/mta-connection)
+![npm](https://img.shields.io/npm/v/mta-connection) ![license](https://img.shields.io/github/license/rendet4/mta-connection)
 
 ## English
 
@@ -18,22 +18,22 @@ npm install mta-connection
 import MtaConnection from "mta-connection";
 
 const mta = new MtaConnection({
-    host: "127.0.0.1",
-    port: 22005,
-    protocol: "http",
-    credentials: {
-        username: "admin",
-        password: "password"
-    }
+  host: "127.0.0.1",
+  port: 22005,
+  protocol: "http",
+  credentials: {
+    username: "admin",
+    password: "password",
+  },
 });
 
 async function testCall() {
-    try {
-        const result = await mta.api.resourceName.procedureName("param1", "param2");
-        console.log(result);
-    } catch (error) {
-        console.error("Error:", error);
-    }
+  try {
+    const result = await mta.api.resourceName.procedureName("param1", "param2");
+    console.log(result);
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
 
 testCall();
@@ -41,13 +41,13 @@ testCall();
 
 ### Configuration
 
-| Option        | Type        | Description                                | Default Value  |
-|--------------|------------|--------------------------------|---------------|
-| `host`      | `string`   | MTA:SA server address         | `127.0.0.1`  |
-| `port`      | `number`   | HTTP API port                 | `22005`       |
-| `protocol`  | `"http" \| "https"` | Connection protocol | `http`        |
-| `credentials.username` | `string` | API login           | `undefined`   |
-| `credentials.password` | `string` | API password        | `undefined`   |
+| Option                 | Type                | Description           | Default Value |
+| ---------------------- | ------------------- | --------------------- | ------------- |
+| `host`                 | `string`            | MTA:SA server address | `127.0.0.1`   |
+| `port`                 | `number`            | HTTP API port         | `22005`       |
+| `protocol`             | `"http" \| "https"` | Connection protocol   | `http`        |
+| `credentials.username` | `string`            | API login             | `undefined`   |
+| `credentials.password` | `string`            | API password          | `undefined`   |
 
 ### API
 
@@ -77,22 +77,22 @@ npm install mta-connection
 import MtaConnection from "mta-connection";
 
 const mta = new MtaConnection({
-    host: "127.0.0.1",
-    port: 22005,
-    protocol: "http",
-    credentials: {
-        username: "admin",
-        password: "password"
-    }
+  host: "127.0.0.1",
+  port: 22005,
+  protocol: "http",
+  credentials: {
+    username: "admin",
+    password: "password",
+  },
 });
 
 async function testCall() {
-    try {
-        const result = await mta.api.resourceName.procedureName("param1", "param2");
-        console.log(result);
-    } catch (error) {
-        console.error("Error:", error);
-    }
+  try {
+    const result = await mta.api.resourceName.procedureName("param1", "param2");
+    console.log(result);
+  } catch (error) {
+    console.error("Error:", error);
+  }
 }
 
 testCall();
@@ -100,13 +100,13 @@ testCall();
 
 ### Конфигурация
 
-| Опция        | Тип        | Описание                                   | Значение по умолчанию |
-|-------------|-----------|--------------------------------|------------------|
-| `host`      | `string`  | Адрес сервера MTA:SA         | `127.0.0.1`     |
-| `port`      | `number`  | Порт HTTP API                 | `22005`         |
-| `protocol`  | `"http" \| "https"` | Протокол соединения | `http`          |
-| `credentials.username` | `string` | Логин для API       | `undefined`     |
-| `credentials.password` | `string` | Пароль для API       | `undefined`     |
+| Опция                  | Тип                 | Описание             | Значение по умолчанию |
+| ---------------------- | ------------------- | -------------------- | --------------------- |
+| `host`                 | `string`            | Адрес сервера MTA:SA | `127.0.0.1`           |
+| `port`                 | `number`            | Порт HTTP API        | `22005`               |
+| `protocol`             | `"http" \| "https"` | Протокол соединения  | `http`                |
+| `credentials.username` | `string`            | Логин для API        | `undefined`           |
+| `credentials.password` | `string`            | Пароль для API       | `undefined`           |
 
 ### API
 
@@ -123,4 +123,3 @@ const result = await mta.api.resourceName.procedureName(param1, param2);
 ## License / Лицензия
 
 This project is licensed under the [MIT](LICENSE) license. / Этот проект распространяется под лицензией [MIT](LICENSE).
-
